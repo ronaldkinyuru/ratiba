@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"image": "/assets/images/18.jpg",
+		"title": "Launching of Ratiba App",
+		"date": "2024-12-01",
+		"time": "10:00 - 12:00",
+		"venue": "Nairobi Arboretum",
+		"charge": "Free"
+	},
+	{
+		"id": 2,
+		"image": "/assets/images/18.jpg",
+		"title": "Launching of Ratiba App",
+		"date": "2024-12-01",
+		"time": "10:00 - 12:00",
+		"venue": "Nairobi Arboretum",
+		"charge": "Free"
+	},
+	{
+		"id": 3,
+		"image": "/assets/images/18.jpg",
+		"title": "Launching of Ratiba App",
+		"date": "2024-12-01",
+		"time": "10:00 - 12:00",
+		"venue": "Nairobi Arboretum",
+		"charge": "Free"
+	},
+	{
+		"id": 4,
+		"image": "/assets/images/18.jpg",
+		"title": "Launching of Ratiba App",
+		"date": "2024-12-01",
+		"time": "10:00 - 12:00",
+		"venue": "Nairobi Arboretum",
+		"charge": "Free"
+	}
+]

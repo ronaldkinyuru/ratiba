@@ -1,0 +1,33 @@
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0;
+	background-color: #aeb1b8;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	height: 10%;
+}
+
+.list {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+}
+.list li {
+	list-style: none;
+	font-weight: 500;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.list li:hover {
+	color: var(--color-gold);
+}
+
+.welcome {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--color-gold);
+}

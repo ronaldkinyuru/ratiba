@@ -1,0 +1,24 @@
+.hero_banner {
+	background: url("/assets/images/event_hero.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.banner_content {
+	text-align: center;
+	padding: 10rem 0;
+}
+
+.banner_content h2 {
+	font-size: 2.5rem;
+	color: #fff;
+	font-family: "Sora", sans-serif;
+}
+
+.banner_content p {
+	font-size: 0.9rem;
+	color: #008b8b;
+	margin-top: 1rem;
+	font-weight: 800;
+}

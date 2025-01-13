@@ -1,0 +1,75 @@
+.homeregister {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #d9d9d9;
+	width: 100%;
+	height: 100vh;
+	margin-top: auto;
+}
+
+.error {
+	color: #d9534f;
+	margin-bottom: 1rem;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+.registerform {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 400px;
+}
+
+.inputbox {
+	width: 100%;
+}
+
+.inputbox input {
+	width: 100%;
+	height: 40px;
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-family: "Poppins", sans-serif;
+	font-size: 1rem;
+	outline: none;
+	transition: border-color 0.3s;
+}
+
+.inputbox input:focus {
+	border-color: #008b8b;
+}
+
+.register_button {
+	width: 100%;
+	height: 40px;
+	margin: 10px 0;
+	padding: 10px;
+	background-color: #008b8b;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-family: "Poppins", sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.register_button:hover {
+	background-color: #007373;
+}
+
+.register_button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
