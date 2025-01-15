@@ -20,7 +20,7 @@ const Register = () => {
 
 		try {
 			const response = await fetch(
-				`https://djangoratiba-d7e3c1112f97.herokuapp.com/auth/register/`,
+				`http://127.0.0.1:8000/auth/register/`,
 				{
 					method: "POST",
 					headers: {

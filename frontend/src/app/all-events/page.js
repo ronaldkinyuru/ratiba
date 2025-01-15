@@ -11,7 +11,7 @@ const AllEvents = () => {
 		const fetchEvents = async () => {
 			try {
 				const response = await fetch(
-					"https://djangoratiba-d7e3c1112f97.herokuapp.com/events/?page=1"
+					"http://127.0.0.1:8000/events/?page=1"
 				);
 				if (!response.ok) {
 					throw new Error("Failed to fetch events");
@@ -31,7 +31,7 @@ const AllEvents = () => {
 	const handleRSVP = async (eventId) => {
 		try {
 			const response = await fetch(
-				"https://djangoratiba-d7e3c1112f97.herokuapp.com/events/rsvp/",
+				"http://127.0.0.1:8000/events/rsvp/",
 				{
 					method: "POST",
 					headers: {

@@ -37,7 +37,7 @@ const CreateEvent = () => {
 
 		try {
 			const response = await fetch(
-				"https://djangoratiba-d7e3c1112f97.herokuapp.com/events/create/",
+				"http://127.0.0.1:8000/events/create/",
 				{
 					method: "POST",
 					body: formData, // FormData will automatically set the correct Content-Type

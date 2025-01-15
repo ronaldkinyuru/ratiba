@@ -20,7 +20,7 @@ const SignIn = () => {
 
 		try {
 			const response = await fetch(
-				"https://djangoratiba-d7e3c1112f97.herokuapp.com/auth/login/",
+				"http://127.0.0.1:8000/auth/login/",
 				{
 					method: "POST",
 					headers: {
