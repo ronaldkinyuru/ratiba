@@ -1,5 +1,10 @@
 #Ratiba_Events
 Django install
+how to run
+sudo service postgresql status
+source venv/bin/activate
+python3 manage.py runserver
+
 1. python3 -m pip install virtualenv.   -install package
 
 2. python3 -m venv venv - create virtual env

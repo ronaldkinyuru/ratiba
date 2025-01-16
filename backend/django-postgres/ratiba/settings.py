@@ -9,12 +9,13 @@ import environ
 import os
 import datetime
 
-# Initialize environment variables
-env = environ.Env()
-environ.Env.read_env()
-
 # Build paths inside the project
 BASE_DIR = Path(__file__).resolve().parent.parent
+# Initialize environment variables
+env = environ.Env()
+environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
+
+
 
 # Media settings
 MEDIA_ROOT = BASE_DIR / 'media'
@@ -68,6 +69,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'authentication.middleware.TokenValidationMiddleware',
 ]
 
 ROOT_URLCONF = 'ratiba.urls'
@@ -158,5 +160,22 @@ EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_SSL = False
-EMAIL_HOST_USER = env('EMAIL_HOST_USER', default='your_email@example.com')
-EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD', default='your_email_password')
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+
+
+# Logging configuration
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'DEBUG',
+    },
+}
