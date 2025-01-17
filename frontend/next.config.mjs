@@ -1,13 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-		remotePatterns: [
-			{
-				protocol: "https",
-				hostname: "djangoratiba-d7e3c1112f97.herokuapp.com",
-				pathname: "/media/event_images/**",
-			},
-		],
+		 domains: ['127.0.0.1', 'localhost'],
 	},
 };
 

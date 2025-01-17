@@ -6,7 +6,7 @@ const Header = () => {
 	return (
 		<div className={styles.main}>
 			<ul className={styles.list}>
-				<Link href="/homepage">
+				<Link href="../">
 					<li>Home</li>
 				</Link>
 				<Link href="/about-us">
@@ -19,7 +19,7 @@ const Header = () => {
 					<li>Create Event</li>
 				</Link>
 				<Link href="/auth">
-					<li>Profile</li>
+					<li>Login</li>
 				</Link>
 			</ul>
 		</div>

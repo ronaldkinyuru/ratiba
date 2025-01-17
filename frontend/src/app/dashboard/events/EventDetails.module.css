@@ -1,0 +1,77 @@
+/* Container styling for event details page */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* Styling for event title */
+.event-title {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #031f4f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Event description styling */
+.event-description {
+    font-size: 1rem;
+    color: #33475b;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Event details section */
+.event-details {
+    font-size: 1rem;
+    color: #33475b;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Image section for event */
+.event-image {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Date, time, and venue styling */
+.details-item {
+    margin-bottom: 10px;
+}
+
+/* Buttons or link styles */
+.view-btn {
+    background-color: #008b8b;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.view-btn:hover {
+    background-color: #005f5f;
+}
+
+.view-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
