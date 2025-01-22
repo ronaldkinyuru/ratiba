@@ -1,7 +1,7 @@
 #Ratiba_Events
 Django install
 how to run
-sudo service postgresql status
+sudo service postgresql start
 source venv/bin/activate
 python3 manage.py runserver
 

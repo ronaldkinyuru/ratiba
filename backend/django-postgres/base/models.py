@@ -1,9 +1,8 @@
+
 # base/models.py
 
 from django.db import models
 from django.utils import timezone
-from django.contrib.auth.models import User
-
 
 class Event(models.Model):
     CHARGE_CHOICES = [
@@ -19,8 +18,7 @@ class Event(models.Model):
     time = models.TimeField(default=timezone.now)  # Gets current time
     venue = models.CharField(max_length=255, blank=True)  # Replaces location
     charge = models.CharField(max_length=4, choices=CHARGE_CHOICES, default='free')  # Free or Pay option
-    creator = models.ForeignKey(User, on_delete=models.CASCADE, related_name='events_created')
-     
+
     def __str__(self):
         return self.title
 
@@ -67,4 +65,3 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.participant} booked for {self.event}"
-
